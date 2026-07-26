@@ -1,0 +1,128 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    margin:0;
+    background:#111;
+    color:white;
+}
+
+
+header{
+    text-align:center;
+    padding:20px;
+    background:#1b1b1b;
+}
+
+
+header h1{
+    margin:0;
+    font-size:35px;
+}
+
+
+.app{
+
+    display:flex;
+    height:calc(100vh - 120px);
+
+}
+
+
+.controls{
+
+    width:350px;
+    padding:20px;
+    background:#181818;
+
+}
+
+
+textarea{
+
+    width:100%;
+    height:120px;
+
+    background:#222;
+    color:white;
+
+    border:1px solid #555;
+    border-radius:10px;
+
+    padding:15px;
+    font-size:16px;
+
+    resize:none;
+
+}
+
+
+
+.buttons{
+
+    margin-top:15px;
+
+}
+
+
+button{
+
+    padding:10px 15px;
+
+    margin:5px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#4a90e2;
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#357abd;
+
+}
+
+
+
+.results{
+
+    margin-top:30px;
+
+    background:#222;
+
+    padding:15px;
+
+    border-radius:10px;
+
+}
+
+
+
+.graphArea{
+
+    flex:1;
+
+    padding:20px;
+
+}
+
+
+#graphCanvas{
+
+    width:100%;
+    height:80%;
+
+    background:white;
+
+    border-radius:10px;
+
+}

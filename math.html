@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Math Visualizer</title>
+    <link rel="stylesheet" href="math.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>🧠 Math Visualizer</h1>
+      <p>Graph • Calculate • Analyze</p>
+    </header>
+
+    <div class="app">
+      <section class="controls">
+        <h2>Calculator</h2>
+
+        <textarea
+          id="inputBox"
+          placeholder="Enter math...
+Example:
+y=x^2
+differentiate x^3
+integrate x^2"
+        ></textarea>
+
+        <div class="buttons">
+          <button onclick="calculateInput()">Calculate</button>
+          <button onclick="graphInput()">Graph</button>
+          <button onclick="analyzeInput()">Analyze</button>
+        </div>
+
+        <div class="results">
+          <h3>Results</h3>
+          <p id="resultText">Your answer will appear here.</p>
+        </div>
+      </section>
+
+      <section class="graphArea">
+        <h2>Graph</h2>
+
+        <canvas id="graphCanvas"></canvas>
+      </section>
+    </div>
+
+    <script src="parser.js"></script>
+    <script src="analysis.js"></script>
+    <script src="graphing.js"></script>
+  </body>
+</html>
